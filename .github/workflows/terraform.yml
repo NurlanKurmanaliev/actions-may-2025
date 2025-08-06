@@ -3,8 +3,12 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: "Select your choice"
+        description: "Select your choice" 
         required: true
+        type: choice
+        oprions:
+        - apply
+        - destroy
 
 jobs:
   deploy:
