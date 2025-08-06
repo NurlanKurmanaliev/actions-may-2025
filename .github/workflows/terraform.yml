@@ -6,7 +6,7 @@ on:
         description: "Select your choice" 
         required: true
         type: choice
-        oprions:
+        options:
         - apply
         - destroy
 
