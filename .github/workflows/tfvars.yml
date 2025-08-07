@@ -20,7 +20,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest #self-hosted
     environment: "${{ inputs.environmnet }}"
     steps: 
     - name: Git Clone
@@ -28,7 +28,7 @@ jobs:
 
     - name: Create tfvars file
       run: echo "${{ vars.TFVARS }}" > terraform.tfvars
-    - name: Creat cat
+    - name: Create cat
       run: cat terraform.tfvars
 
     - name: Set up terraform
