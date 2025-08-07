@@ -52,3 +52,4 @@ jobs:
         else
           terraform destroy -auto-approve
         fi
+        
